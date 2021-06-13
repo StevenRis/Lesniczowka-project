@@ -1,0 +1,122 @@
+.menu-btn__burger {
+  left: 2rem;
+  z-index: 2;
+  height: 6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-menu-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+}
+
+.menu-btn__burger .bar1,
+.menu-btn__burger .bar2,
+.menu-btn__burger .bar3 {
+  width: 20px;
+  height: 2px;
+  margin: 3px 0;
+  transition: 0.7s;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.menu-btn__burger.open {
+  position: fixed;
+  z-index: 3;
+}
+
+.menu-btn__burger.open .bar1 {
+  transform: rotate(-45deg) translate(-4px, 4px);
+  background-color: #fff;
+}
+
+.menu-btn__burger.open .bar2 {
+  transform: translateX(200%);
+  opacity: 0;
+}
+
+.menu-btn__burger.open .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .menu-btn__burger {
+    display: none;
+  }
+}
+
+.nav-links_burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 2;
+}
+
+.nav-links_burger-menu.active {
+  visibility: visible;
+  padding: 0;
+}
+
+.nav-links_burger-menu span {
+  position: absolute;
+  top: -100%;
+  right: calc(25% * var(--i));
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 44, 44, 0.9);
+  transition: 0.25s;
+  transition-delay: calc(0.25s * var(--i));
+}
+
+.nav-links_burger-menu.active span {
+  top: 0;
+}
+
+.nav-links_burger-menu ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  transform: translateX(-350px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.nav-links_burger-menu.active ul {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.45s;
+}
+
+.nav-links_burger-menu ul li {
+  list-style: none;
+}
+
+.nav-links_burger-menu ul li a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+}
