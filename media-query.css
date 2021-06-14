@@ -16,3 +16,187 @@
     font-size: 49%;
   }
 }
+
+@media (min-width: 768px) {
+  header {
+    height: 100vh;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
+  }
+
+  .logo-section {
+    margin: 1em 0;
+  }
+
+  .links li {
+    margin: 0 1.7em;
+    text-align: center;
+  }
+
+  .language {
+    position: static;
+  }
+
+  .v-sign {
+    position: absolute;
+    top: 11rem;
+    right: 6.77rem;
+    width: 9px;
+    height: 5px;
+    cursor: pointer;
+  }
+
+  .heading {
+    width: 45ch;
+    margin-top: 3em;
+    margin-left: 10em;
+  }
+
+  h1,
+  p {
+    text-align: left;
+  }
+
+  .quality_marks-section {
+    margin-top: 5em;
+    flex-direction: row;
+  }
+
+  .part2-section {
+    flex-direction: row;
+  }
+
+  .part2-image img {
+    width: 50vw;
+  }
+
+  .part2-title h2,
+  .part2-title p,
+  .part2-title h4,
+  .part2-more_info {
+    text-align: left;
+  }
+
+  .part2-title {
+    padding: 7em 6em;
+  }
+
+  .part2-title p {
+    margin-top: 2.5em;
+  }
+
+  .part2-more_info {
+    margin-top: 3em;
+  }
+
+  .specialties-title h1 {
+    padding: 2em 0;
+    font-size: 4.8rem;
+  }
+
+  .specialties-title img {
+    width: 6%;
+  }
+
+  .card-name {
+    width: 74vw;
+    height: 15vh;
+  }
+
+  .card-name h2 {
+    padding-top: 0.2em;
+  }
+
+  .card-name a {
+    font-size: 1.4rem;
+  }
+
+  .card-name img {
+    width: auto;
+  }
+
+  .arrow-red {
+    left: 11em;
+    bottom: -2em;
+  }
+
+  .paralax {
+    text-align: -webkit-center;
+  }
+
+  .paralax h1 {
+    font-size: 4.8rem;
+    padding-top: 1em;
+  }
+
+  .paralax .accent {
+    font-size: 11rem;
+    margin-left: 1em;
+  }
+
+  .bottom-line {
+    width: 39%;
+    left: 0.7em;
+  }
+
+  .guys-section {
+    height: 55vh;
+  }
+
+  .man-in-black,
+  .man-in-white {
+    height: 35vh;
+  }
+
+  .slogan-container {
+    /* position: absolute; */
+    width: 50rem;
+    top: -10em;
+    left: 10em;
+  }
+
+  .paralax-bottom-text {
+    justify-self: center;
+    width: 82rem;
+    margin-left: 1em;
+  }
+
+  .footer {
+    padding-top: 2em;
+    height: 25rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5em;
+  }
+
+  .footer p {
+    width: 34.8rem;
+    text-align: left;
+  }
+
+  .footer .logo-section {
+    flex-direction: column;
+  }
+
+  .footer .logo-image {
+    padding-right: 0;
+    width: 50%;
+  }
+
+  .footer .name-image {
+    width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5em;
+    padding-bottom: 2em;
+  }
+}

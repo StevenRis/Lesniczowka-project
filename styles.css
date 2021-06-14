@@ -82,8 +82,7 @@ a {
 
 .logo-section {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: space-between; */
+  align-items: center;
   margin: 3.5em 1em 0.5em;
 }
 
@@ -97,6 +96,7 @@ a {
 }
 
 .language {
+  display: flex;
   position: absolute;
   top: 1.5rem;
   right: 2rem;
@@ -106,7 +106,7 @@ a {
 
 .v-sign {
   position: absolute;
-  top: 5rem;
+  top: 6rem;
   right: 1.7rem;
   width: 9px;
   height: 5px;
@@ -131,14 +131,12 @@ li {
   text-transform: uppercase;
 }
 
-li:hover {
+a:hover {
   color: red;
-  cursor: pointer;
 }
 
 .heading {
   padding: 1em 1em;
-  /* width: 70%; */
 }
 
 .heading h1 {
@@ -283,20 +281,18 @@ li:hover {
 
 .part2-more_info {
   padding: 2em 0;
+  text-align: center;
 }
 
 .part2-more_info img {
   width: 30px;
 }
 
-/* .specialties {
-  display: flex;
-} */
-
 .specialties-title h1 {
   font-family: 'DM Serif Display,serif';
   font-size: 3.9rem;
   text-align: center;
+  padding: 1em 0;
 }
 
 .specialties-title img {
@@ -315,10 +311,6 @@ li:hover {
   padding-left: 1em;
 }
 
-/* .card img {
-  width: 100%;
-} */
-
 .card-name h2 {
   font-family: 'DM Serif Display', serif;
   font-style: normal;
@@ -331,7 +323,6 @@ li:hover {
 }
 
 .card-name a {
-  /* position: relative; */
   text-transform: uppercase;
 }
 
@@ -354,7 +345,7 @@ li:hover {
 }
 
 .paralax h1 {
-  padding-top: 2em;
+  padding-top: 1em;
   font-family: 'DM Serif Display', serif;
   font-style: normal;
   font-weight: normal;
@@ -409,7 +400,9 @@ li:hover {
 .butcher,
 .meat {
   display: none;
-  position: relative;
+  /* position: relative; */
+  width: 20vw;
+  z-index: -4;
 }
 
 .guys {
@@ -427,8 +420,7 @@ li:hover {
 
 .slogan-container {
   position: relative;
-  /* border: 1px solid rebeccapurple; */
-  bottom: 29em;
+  top: -30em;
 }
 
 .guys-text {
@@ -442,21 +434,33 @@ li:hover {
   text-align: center;
 }
 
-.man-in-black {
-  /* display: none; */
+.black {
   position: relative;
-  top: 11.5em;
-  right: 1em;
-  z-index: -1;
+  /* height: 35vh; */
+  width: 2em;
+  top: 13em;
+  z-index: -2;
+}
+
+.white {
+  position: relative;
+  /* height: 35vh; */
+  width: 2em;
+  bottom: 2em;
+  left: 5em;
+  z-index: -3;
+}
+
+.man-in-black {
   height: 35vh;
 }
 
 .man-in-white {
   /* display: none; */
-  position: relative;
-  top: -2em;
-  left: 6em;
-  z-index: -2;
+  /* position: absolute; */
+  /* top: -2em; */
+  /* left: 6em; */
+  /* z-index: -2; */
   height: 35vh;
 }
 
