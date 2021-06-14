@@ -131,6 +131,10 @@ li {
   text-transform: uppercase;
 }
 
+li:active {
+  color: yellow;
+}
+
 a:hover {
   color: red;
 }
@@ -338,6 +342,7 @@ a:hover {
   background-image: url(img/part3-background.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .paralax {
