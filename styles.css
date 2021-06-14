@@ -289,9 +289,9 @@ li:hover {
   width: 30px;
 }
 
-.specialties {
+/* .specialties {
   display: flex;
-}
+} */
 
 .specialties-title h1 {
   font-family: 'DM Serif Display,serif';
@@ -306,32 +306,24 @@ li:hover {
   width: 8%;
 }
 
-.card {
-  max-width: 35%;
-  max-height: 480px;
-}
-
 .card-name {
-  position: relative;
-  max-width: 480px;
-  max-height: 147px;
-  left: 0px;
-  bottom: 5.9em;
+  position: absolute;
+  width: 100vw;
+  bottom: -0.1em;
   background: #17181a;
-  opacity: 0.6;
+  opacity: 0.5;
   padding-left: 1em;
 }
 
-.card img {
+/* .card img {
   width: 100%;
-}
+} */
 
 .card-name h2 {
   font-family: 'DM Serif Display', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 36px;
-  line-height: 62px;
+  font-size: 3.6rem;
 }
 
 .card-name img {
@@ -339,7 +331,16 @@ li:hover {
 }
 
 .card-name a {
-  text-align: right;
+  /* position: relative; */
+  text-transform: uppercase;
+}
+
+.arrow-red {
+  display: flex;
+  position: relative;
+  left: 13em;
+  cursor: pointer;
+  margin-bottom: 1em;
 }
 
 .paralax-section {

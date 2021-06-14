@@ -101,24 +101,42 @@
   display: none;
 }
 
-.slider {
-  position: relative;
-}
-
-.slider .priv-arrow {
-  position: absolute;
-  bottom: -50px;
-  left: 40%;
-  color: #fff;
-  width: 150px;
-  height: 150px;
-  background: red;
-  border-radius: 50%;
-  text-align: center;
-  display: inline-block;
+.next_arrow {
+  opacity: 0.8;
   cursor: pointer;
 }
 
-body {
-  background: chartreuse;
+.prev_arrow {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 10em;
+  left: 3em;
+  z-index: -1;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 10em;
+  right: 3em;
+  z-index: -1;
+}
+
+@media (min-width: 61.25em) {
+  .left-arrow {
+    position: absolute;
+    top: 10em;
+    left: 3em;
+    z-index: 1;
+  }
+
+  .right-arrow {
+    position: absolute;
+    top: 10em;
+    right: 3em;
+    z-index: 1;
+  }
 }
