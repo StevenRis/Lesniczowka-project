@@ -144,19 +144,7 @@
   }
 
   .guys-section {
-    height: 55vh;
-  }
-
-  .man-in-black,
-  .man-in-white {
-    height: 35vh;
-  }
-
-  .slogan-container {
-    /* position: absolute; */
-    width: 50rem;
-    top: -10em;
-    left: 10em;
+    height: 65vh;
   }
 
   .paralax-bottom-text {
@@ -179,6 +167,14 @@
     text-align: left;
   }
 
+  .social-icons {
+    justify-content: flex-start;
+  }
+
+  .social-icons img {
+    margin-right: 2.5em;
+  }
+
   .footer .logo-section {
     flex-direction: column;
   }
@@ -198,5 +194,17 @@
     justify-content: space-between;
     padding: 0 5em;
     padding-bottom: 2em;
+  }
+}
+
+@media (min-width: 1439px) {
+  .guys-section {
+    height: 85vh;
+  }
+}
+
+@media (min-width: 1500px) {
+  .guys-section {
+    height: 100vh;
   }
 }
