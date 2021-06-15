@@ -18,8 +18,12 @@
 }
 
 @media (min-width: 768px) {
-  header {
+  .main-background {
     height: 100vh;
+  }
+
+  .hero-background {
+    height: 65vh;
   }
 
   .navbar {
@@ -54,6 +58,10 @@
     width: 45ch;
     margin-top: 3em;
     margin-left: 10em;
+  }
+
+  .oferta {
+    width: 55ch;
   }
 
   h1,
