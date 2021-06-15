@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* transition: all ease-in-out 350ms; */
+  transition: all ease-in-out 350ms;
 }
 
 :root {
@@ -22,19 +22,13 @@ body {
   background-color: #17181a;
 }
 
-/* section {
-  opacity: 0;
-  animation: opacity 0.3s ease-in forwards 0.3s;
+body::-webkit-scrollbar {
+  width: 0.7rem;
 }
 
-@keyframes opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-} */
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 0, 0);
+}
 
 h1 {
   font-family: 'DM Serif Display', serif;
