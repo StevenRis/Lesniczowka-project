@@ -167,6 +167,12 @@ a:hover {
   background-color: #fff;
   border-radius: 25px 0 25px 0;
   z-index: 1;
+  filter: saturate(50%);
+}
+
+.shop-online:hover {
+  filter: saturate(100%);
+  cursor: pointer;
 }
 
 .shop-online img {
@@ -423,6 +429,10 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
 }
 
 .footer p {

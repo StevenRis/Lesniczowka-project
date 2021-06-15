@@ -205,6 +205,12 @@
   }
 }
 
+@media (min-width: 1226px) {
+  .guys-section {
+    height: 75vh;
+  }
+}
+
 @media (min-width: 1439px) {
   .guys-section {
     height: 85vh;
